@@ -1,0 +1,414 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#C8FB8C00"
+    >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="600dp"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+
+    <CheckBox
+        android:id="@+id/elma"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:text="Elma\n"
+        android:textSize="20sp"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </CheckBox>
+
+    <CheckBox
+        android:id="@+id/armut"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:text="Armut\n"
+        android:textSize="20sp"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toTopOf="@+id/greyfurt"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ayva">
+
+    </CheckBox>
+
+    <CheckBox
+        android:id="@+id/ayva"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:text="Ayva\n"
+        android:textSize="20sp"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toTopOf="@+id/armut"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/seftali">
+
+    </CheckBox>
+
+    <CheckBox
+        android:id="@+id/seftali"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:textSize="20sp"
+        android:textColor="@color/white"
+        android:text="Şeftali\n"
+        app:layout_constraintBottom_toTopOf="@+id/ayva"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/portakal">
+
+    </CheckBox>
+
+    <CheckBox
+        android:id="@+id/portakal"
+        android:layout_width="match_parent"
+        android:textSize="20sp"
+        android:textColor="@color/white"
+        android:layout_height="35dp"
+        android:text="Portakal\n"
+        app:layout_constraintBottom_toTopOf="@+id/seftali"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mandalina">
+
+    </CheckBox>
+
+    <CheckBox
+        android:id="@+id/mandalina"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:text="Mandalina\n"
+        android:textSize="20sp"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toTopOf="@+id/portakal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/elma">
+
+    </CheckBox>
+
+    <CheckBox
+        android:id="@+id/greyfurt"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:text="Greyfurt\n"
+        android:textSize="20sp"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toTopOf="@+id/muz"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/armut">
+
+    </CheckBox>
+
+    <CheckBox
+        android:id="@+id/muz"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:text="Muz\n"
+        app:layout_constraintBottom_toTopOf="@+id/kivi"
+        android:textSize="20sp"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/greyfurt">
+
+    </CheckBox>
+
+    <CheckBox
+        android:id="@+id/kivi"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:text="Kivi\n"
+        android:textSize="20sp"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toTopOf="@+id/ananas"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/muz">
+
+    </CheckBox>
+
+    <CheckBox
+        android:id="@+id/ananas"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:text="Ananas\n"
+        android:textSize="20sp"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toTopOf="@+id/cilek"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/kivi">
+
+    </CheckBox>
+
+    <CheckBox
+        android:id="@+id/cilek"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:text="Çilek\n"
+        android:textSize="20sp"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toTopOf="@+id/avokado"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ananas">
+
+    </CheckBox>
+
+    <CheckBox
+        android:id="@+id/avokado"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:text="Avokado\n"
+        android:textSize="20sp"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toTopOf="@+id/incir"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cilek">
+
+    </CheckBox>
+
+    <CheckBox
+        android:id="@+id/erik"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:text="Erik\n"
+        android:textSize="20sp"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toTopOf="@+id/kiraz"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/incir">
+
+    </CheckBox>
+
+    <CheckBox
+        android:id="@+id/kiraz"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:textSize="20sp"
+        android:textColor="@color/white"
+        android:text="Kiraz\n"
+        app:layout_constraintBottom_toTopOf="@+id/uzum"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/erik">
+
+    </CheckBox>
+
+    <CheckBox
+        android:id="@+id/limon"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:text="Limon\n"
+        android:textSize="20sp"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="@+id/uzum"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/kiraz">
+
+    </CheckBox>
+
+    <CheckBox
+        android:id="@+id/incir"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:text="İncir\n"
+        android:textSize="20sp"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toTopOf="@+id/erik"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/avokado">
+
+    </CheckBox>
+
+    <CheckBox
+        android:id="@+id/uzum"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:text="Üzüm\n"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/hurma"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/kiraz">
+
+    </CheckBox>
+
+    <CheckBox
+        android:id="@+id/hurma"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:text="Hurma\n"
+        android:textSize="20sp"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toTopOf="@+id/mango"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/uzum">
+
+    </CheckBox>
+
+    <CheckBox
+        android:id="@+id/dut"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:textSize="20sp"
+        android:textColor="@color/white"
+        android:text=" Dut\n"
+        app:layout_constraintBottom_toTopOf="@+id/alic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mango">
+
+    </CheckBox>
+
+    <CheckBox
+        android:id="@+id/mango"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:text="Mango\n"
+        android:textSize="20sp"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toTopOf="@+id/dut"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/hurma">
+
+    </CheckBox>
+
+    <CheckBox
+        android:id="@+id/alic"
+        android:layout_width="match_parent"
+        android:textSize="20sp"
+        android:textColor="@color/white"
+        android:layout_height="35dp"
+        android:text="Alıç\n"
+        app:layout_constraintBottom_toTopOf="@+id/kavun"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dut">
+
+    </CheckBox>
+
+    <CheckBox
+        android:id="@+id/kavun"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:text="Kavun\n"
+        android:textSize="20sp"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toTopOf="@+id/karpuz"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/alic">
+
+    </CheckBox>
+
+    <CheckBox
+        android:id="@+id/karpuz"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:text="Karpuz\n"
+        android:textSize="20sp"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toTopOf="@+id/textView4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/kavun">
+
+    </CheckBox>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="71dp"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="italic"
+        android:singleLine="true"
+        android:text="Listem"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+      >
+
+    </TextView>
+
+    <Button
+        android:id="@+id/listeOlustur4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginBottom="16dp"
+        android:text="Liste Yap"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/nextButton4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:text="İlerle"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/myList3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="28dp"
+        android:layout_marginBottom="16dp"
+        android:text="Listelerim"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

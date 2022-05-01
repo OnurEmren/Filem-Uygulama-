@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#BC5E35B1">
+
+    <CheckBox
+        android:id="@+id/ayran"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:text=" Ayran\n"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </CheckBox>
+
+    <CheckBox
+        android:id="@+id/kola"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:text=" Kola\n"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fanta">
+
+    </CheckBox>
+
+    <CheckBox
+        android:id="@+id/fanta"
+        android:layout_width="0dp"
+        android:layout_height="35dp"
+        android:text=" Fanta\n"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/yedigun">
+
+    </CheckBox>
+
+    <CheckBox
+        android:id="@+id/yedigun"
+        android:layout_width="0dp"
+        android:layout_height="35dp"
+        android:text=" Yedigün\n"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ayran">
+
+    </CheckBox>
+
+    <CheckBox
+        android:id="@+id/salgam"
+        android:layout_width="0dp"
+        android:layout_height="35dp"
+        android:text=" Şalgam\n"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/kola">
+
+    </CheckBox>
+
+    <CheckBox
+        android:id="@+id/limonata"
+        android:layout_width="0dp"
+        android:layout_height="35dp"
+        android:text=" Limonata\n"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/salgam">
+
+    </CheckBox>
+
+    <CheckBox
+        android:id="@+id/soda"
+        android:layout_width="0dp"
+        android:layout_height="35dp"
+        android:text=" Maden Suyu\n"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/limonata">
+
+    </CheckBox>
+
+    <CheckBox
+        android:id="@+id/su"
+        android:layout_width="0dp"
+        android:layout_height="35dp"
+        android:text=" Su\n"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/soda">
+
+    </CheckBox>
+
+    <CheckBox
+        android:id="@+id/visneSuyu"
+        android:layout_width="0dp"
+        android:layout_height="35dp"
+        android:text=" Vişne Suyu\n"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/su">
+
+    </CheckBox>
+
+    <CheckBox
+        android:id="@+id/seftaliSuyu"
+        android:layout_width="0dp"
+        android:layout_height="35dp"
+        android:text=" Şeftali Suyu\n"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/elmaSuyu">
+
+    </CheckBox>
+
+    <CheckBox
+        android:id="@+id/elmaSuyu"
+        android:layout_width="0dp"
+        android:layout_height="35dp"
+        android:text=" Elma Suyu\n"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/visneSuyu">
+
+    </CheckBox>
+
+    <CheckBox
+        android:id="@+id/gazoz"
+        android:layout_width="0dp"
+        android:layout_height="35dp"
+        android:text=" Gazoz\n"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/seftaliSuyu">
+
+    </CheckBox>
+
+    <CheckBox
+        android:id="@+id/enerjiIcecegi"
+        android:layout_width="0dp"
+        android:layout_height="35dp"
+        android:text=" Enerji İçeceği\n"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/gazoz">
+
+    </CheckBox>
+
+    <Button
+        android:id="@+id/kaydetButton5"
+        android:layout_width="166dp"
+        android:layout_height="54dp"
+        android:layout_marginBottom="8dp"
+        android:text=" Liste Oluştur\n"
+        android:textColor="@color/white"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="0dp"
+        android:layout_height="70dp"
+        android:layout_marginBottom="52dp"
+        android:singleLine="true"
+        android:text="Listem"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="italic"
+        app:layout_constraintBottom_toTopOf="@+id/kaydetButton5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/next5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="11dp"
+        android:text="İlerle"
+        android:textColor="@color/white"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/kaydetButton5" />
+
+    <Button
+        android:id="@+id/myList5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="11dp"
+        android:text="Listelerim"
+        android:textColor="@color/white"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

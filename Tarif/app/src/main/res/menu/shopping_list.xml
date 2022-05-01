@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+<item android:title="Temizlik"
+      android:id="@+id/temizlik"
+      android:icon="@drawable/bucket">
+</item>
+
+    <item android:id="@+id/food"
+        android:icon="@drawable/food"
+         android:title="Yiyecek"
+        >
+
+    </item>
+
+    <item android:id="@+id/icecek"
+         android:title="İçecek"
+        android:icon="@drawable/drink"
+        >
+
+    </item>
+
+</menu>

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_menu"
+    app:startDestination="@id/menuListFragment">
+
+    <fragment
+        android:id="@+id/menuListFragment"
+        android:name="com.onuremren.tarif.view.fragment.MenuListFragment"
+        android:label="fragment_menu_list"
+        tools:layout="@layout/fragment_menu_list" >
+        <action
+            android:id="@+id/action_menuListFragment_to_anaYemekFragment"
+            app:destination="@id/anaYemekFragment" />
+        <action
+            android:id="@+id/action_menuListFragment_to_yardimciYemekFragment"
+            app:destination="@id/yardimciYemekFragment" />
+        <action
+            android:id="@+id/action_menuListFragment_to_tatliFragment"
+            app:destination="@id/tatliFragment" />
+        <action
+            android:id="@+id/action_menuListFragment_to_menuFragment"
+            app:destination="@id/menuFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/anaYemekFragment"
+        android:name="com.onuremren.tarif.view.fragment.AnaYemekFragment"
+        android:label="fragment_ana_yemek"
+        tools:layout="@layout/fragment_ana_yemek" >
+        <action
+            android:id="@+id/action_anaYemekFragment_to_menuListFragment"
+            app:destination="@id/menuListFragment" />
+        <action
+            android:id="@+id/action_anaYemekFragment_to_menuFragment"
+            app:destination="@id/menuFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/yardimciYemekFragment"
+        android:name="com.onuremren.tarif.view.fragment.YardimciYemekFragment"
+        android:label="fragment_yardimci_yemek"
+        tools:layout="@layout/fragment_yardimci_yemek" >
+        <action
+            android:id="@+id/action_yardimciYemekFragment_to_menuListFragment"
+            app:destination="@id/menuListFragment" />
+        <action
+            android:id="@+id/action_yardimciYemekFragment_to_menuFragment"
+            app:destination="@id/menuFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/tatliFragment"
+        android:name="com.onuremren.tarif.view.fragment.TatliFragment"
+        android:label="fragment_tatli"
+        tools:layout="@layout/fragment_tatli" >
+        <action
+            android:id="@+id/action_tatliFragment_to_menuListFragment"
+            app:destination="@id/menuListFragment" />
+        <action
+            android:id="@+id/action_tatliFragment_to_menuFragment"
+            app:destination="@id/menuFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/menuFragment"
+        android:name="com.onuremren.tarif.view.fragment.MenuFragment"
+        android:label="fragment_menu"
+        tools:layout="@layout/fragment_menu" >
+        <argument
+            android:name="info"
+            app:argType="string" />
+        <argument
+            android:name="id"
+            app:argType="integer"
+            android:defaultValue="0" />
+        <action
+            android:id="@+id/action_menuFragment_to_menuListFragment"
+            app:destination="@id/menuListFragment" />
+    </fragment><action android:id="@+id/action_global_yardimciYemekFragment" app:destination="@id/yardimciYemekFragment"/><action android:id="@+id/action_global_anaYemekFragment" app:destination="@id/anaYemekFragment"/><action android:id="@+id/action_global_tatliFragment" app:destination="@id/tatliFragment"/><action android:id="@+id/action_global_menuFragment" app:destination="@id/menuFragment"/>
+</navigation>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/main"
+        android:title="Ana Sayfa"
+        app:showAsAction="always"
+        android:icon="@drawable/ic_home"
+        >
+
+    </item>
+
+    <item android:icon="@drawable/bucket"
+        android:id="@+id/elektronik"
+        android:title="Temizlik Ürünleri"
+        app:showAsAction="ifRoom"
+        >
+
+    </item>
+    <item
+        android:id="@+id/yiyecek"
+        android:title="Temel Yiyecekler"
+        app:showAsAction="always"
+        android:icon="@drawable/food"
+        />
+
+    <item
+        android:id="@+id/drinks"
+        android:title="İçecekler"
+        android:menuCategory="secondary"
+        app:showAsAction="ifRoom"
+        android:icon="@drawable/drink"
+        />
+
+    <item
+        android:id="@+id/vegatables"
+        android:title="Sebzeler"
+        app:showAsAction="ifRoom"
+
+        >
+
+    </item>
+
+    <item
+        android:id="@+id/fruits"
+        android:title="Meyveler"
+        app:showAsAction="ifRoom"
+        android:icon="@drawable/apple"
+        >
+
+    </item>
+
+
+</menu>

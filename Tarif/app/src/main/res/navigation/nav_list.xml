@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_list"
+    app:startDestination="@id/temizlikFragment">
+
+    <fragment
+        android:id="@+id/temizlikFragment"
+        android:name="com.onuremren.tarif.view.fragment.TemizlikFragment"
+        android:label="Temizlik Malzemeleri"
+        tools:layout="@layout/fragment_temizlik">
+        <action
+            android:id="@+id/action_temizlikFragment_to_listOfShoppingFragment"
+            app:destination="@id/listOfShoppingFragment" />
+        <action
+            android:id="@+id/action_temizlikFragment_to_shoppingDetailFragment"
+            app:destination="@id/shoppingDetailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/listOfShoppingFragment"
+        android:name="com.onuremren.tarif.view.fragment.ListOfShoppingFragment"
+        android:label="Alınacaklar"
+        tools:layout="@layout/fragment_list_of_shopping">
+        <action
+            android:id="@+id/action_listOfShoppingFragment_to_temizlikFragment"
+            app:destination="@id/temizlikFragment" />
+        <argument
+            android:name="info"
+            app:argType="string" />
+        <action
+            android:id="@+id/action_listOfShoppingFragment_to_shoppingDetailFragment"
+            app:destination="@id/shoppingDetailFragment" />
+        <argument
+            android:name="id"
+            android:defaultValue="0"
+            app:argType="integer" />
+    </fragment>
+    <fragment
+        android:id="@+id/shoppingDetailFragment"
+        android:name="com.onuremren.tarif.view.fragment.ShoppingDetailFragment"
+        android:label="Listem"
+        tools:layout="@layout/fragment_shopping_detail">
+        <action
+            android:id="@+id/action_shoppingDetailFragment_to_listOfShoppingFragment"
+            app:destination="@id/listOfShoppingFragment" />
+        <argument
+            android:name="info"
+            app:argType="string" />
+        <argument
+            android:name="id"
+            android:defaultValue="0"
+            app:argType="integer" />
+    </fragment>
+    <fragment
+        android:id="@+id/yiyecekFragment"
+        android:name="com.onuremren.tarif.view.fragment.YiyecekFragment"
+        android:label="Temel Gıda"
+        tools:layout="@layout/fragment_yiyecek">
+        <action
+            android:id="@+id/action_yiyecekFragment_to_listOfShoppingFragment"
+            app:destination="@id/listOfShoppingFragment" />
+        <action
+            android:id="@+id/action_yiyecekFragment_to_shoppingDetailFragment"
+            app:destination="@id/shoppingDetailFragment" />
+    </fragment>
+    <action android:id="@+id/action_global_yiyecekFragment" app:destination="@id/yiyecekFragment" />
+    <fragment
+        android:id="@+id/drinksFragment"
+        android:name="com.onuremren.tarif.view.fragment.DrinksFragment"
+        android:label="İçecekler"
+        tools:layout="@layout/fragment_drinks">
+        <action
+            android:id="@+id/action_drinksFragment_to_shoppingDetailFragment"
+            app:destination="@id/shoppingDetailFragment" />
+        <action
+            android:id="@+id/action_drinksFragment_to_listOfShoppingFragment"
+            app:destination="@id/listOfShoppingFragment" />
+    </fragment>
+    <action android:id="@+id/action_global_drinksFragment" app:destination="@id/drinksFragment" />
+    <fragment
+        android:id="@+id/fruitsFragment"
+        android:name="com.onuremren.tarif.view.fragment.FruitsFragment"
+        android:label="Meyveler"
+        tools:layout="@layout/fragment_fruits">
+        <action
+            android:id="@+id/action_fruitsFragment_to_listOfShoppingFragment"
+            app:destination="@id/listOfShoppingFragment" />
+        <action
+            android:id="@+id/action_fruitsFragment_to_shoppingDetailFragment"
+            app:destination="@id/shoppingDetailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/vegatablesFragment"
+        android:name="com.onuremren.tarif.view.fragment.VegatablesFragment"
+        android:label="Sebzeler"
+        tools:layout="@layout/fragment_vegatables">
+        <action
+            android:id="@+id/action_vegatablesFragment_to_listOfShoppingFragment"
+            app:destination="@id/listOfShoppingFragment" />
+        <action
+            android:id="@+id/action_vegatablesFragment_to_shoppingDetailFragment"
+            app:destination="@id/shoppingDetailFragment" />
+    </fragment>
+    <action android:id="@+id/action_global_vegatablesFragment" app:destination="@id/vegatablesFragment" />
+    <action android:id="@+id/action_global_fruitsFragment" app:destination="@id/fruitsFragment" /><action android:id="@+id/action_global_temizlikFragment" app:destination="@id/temizlikFragment"/>
+</navigation>
